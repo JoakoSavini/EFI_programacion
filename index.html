@@ -5,28 +5,23 @@
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-
-    <style>
-      .contenido {
-        flex: 1;
-      }
-    </style>
-
+      name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
     <!-- Bootstrap CSS v5.2.1 -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous"
-    />
+      crossorigin="anonymous"/>
+    <link rel="stylesheet" href="css/index.css">
+    <link 
+      rel="stylesheet" 
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
   </head>
 
-  <body>
+  <body class="d-flex flex-column">
     <header>
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary bg-black">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">Icon</a>
           <button
@@ -43,31 +38,42 @@
           <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="profesores.html">Profesores</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="catalogo.html">Catálogo</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="perfil.html">Perfil</a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
     </header>
+
     <main>
-      <div class="contenido">
-        
+      <div class="contenido d-flex flex-column justify-content-center align-items-center">
+        <div class="container-image mt-5">
+          <img class="img-fluid" src="images/logo.png" alt="">
+        </div>
+        <div class="container-text d-flex flex-column mt-3">
+          <a href="login_html" class="texto text-center">Crear Cuenta</a>
+          <a href="inicio_sesion.html" class="texto text-center">Iniciar Sesión</a>
+          <a href="" class="txt text-center">¿Olvidaste tu contraseña?</a>
+        </div>
       </div>
     </main>
-    <footer class="bg-dark d-flex justify-content-center bg-black">
+
+    <footer class="bg-black d-flex justify-content-center fixed-bottom">
       <div>
-        <a href="" class="me-3"> <i class="fa-brands fa-x-twitter" style="color: #000000;"></i> </a>
-        <a href="" class="me-3"> <i class="fa-brands fa-tiktok" style="color: #000000;"></i></i> </a>
-        <a href="" class="me-3"> <i class="fa-brands fa-instagram" style="color: #000000;"></i> </a> 
+        <a href="" class="me-3 icons"> <i class="fa-brands fa-facebook" style="color: #eff1fc;"></i> </a>
+        <a href="" class="me-3 icons"> <i class="fa-brands fa-tiktok" style="color: #eff1fc;"></i></i> </a>
+        <a href="" class="me-3 icons"> <i class="fa-brands fa-instagram" style="color: #eff1fc;"></i> </a> 
     </div>
     </footer>
+
+
     <!-- Bootstrap JavaScript Libraries -->
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
