@@ -1,0 +1,21 @@
+body {
+    display: flex;
+    flex-direction: column;
+    background: #131211;
+}
+
+.icons {
+    font-size: 1.5rem;
+    text-decoration: none;
+    border: none;
+}
+
+.imagen{
+    border-radius: 50%;
+    width: 200px;
+}
+
+
+h2,h4,p,a{
+    color: #EFF1EC;
+}

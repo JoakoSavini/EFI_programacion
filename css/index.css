@@ -1,7 +1,7 @@
 body {
     display: flex;
     flex-direction: column;
-    background: #eff1fc;
+    background: #131211;
 }
 
 .icons {
@@ -9,3 +9,20 @@ body {
     text-decoration: none;
     border: none;
 }
+
+.color-nav {
+    background-color: #131210;
+    transition: color 0.3s ease;
+}
+
+.color-text {
+    color:#FFB300;
+}
+
+/* .color-nav:hover{
+    color: #FFB300;
+}
+
+.icons:hover{
+    border-color: #FFB300;
+} */
