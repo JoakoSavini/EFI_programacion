@@ -19,6 +19,15 @@ body {
     color:#FFB300;
 }
 
+/* .container{     ESTO ES PARA ACOMODAR M ARRIBA EL FORM, PERO NO ANDA
+    position: absolute;
+    top: -20px;
+} */
+
+.btn{
+    background-color: #FFB300;
+}
+
 /* .color-nav:hover{
     color: #FFB300;
 }
@@ -26,3 +35,33 @@ body {
 .icons:hover{
     border-color: #FFB300;
 } */
+
+/* ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+li{
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+li::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background-color: #FFB300;
+    border-radius: 4px;
+    scale: 0 1;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.35s ease;
+}
+li:hover::before {
+    transform: scaleX(1); /* Escala completa al hacer hover 
+}*/
