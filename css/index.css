@@ -19,13 +19,17 @@ body {
     color:#FFB300;
 }
 
-/* .container{     ESTO ES PARA ACOMODAR M ARRIBA EL FORM, PERO NO ANDA
-    position: absolute;
-    top: -20px;
-} */
+.container-text{
+    position: relative;
+    top: -40px;
+}
 
 .btn{
     background-color: #FFB300;
+}
+
+.btn:hover{
+    color: #FFB300; /* para cuando se hace hover en la letra */
 }
 
 /* .color-nav:hover{
