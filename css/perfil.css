@@ -21,10 +21,14 @@ nav{
 }
 
 .imagen{
-    border-radius: 50%;
+    /* border-radius: 50%; */
     width: 200px;
 }
 
 h2,h4,p,a{
     color: #EFF1EC;
-}   
+}
+
+.text-yellow{
+    color: #FFB300;
+}
