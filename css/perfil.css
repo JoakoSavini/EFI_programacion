@@ -21,8 +21,10 @@ nav{
 }
 
 .imagen{
-    /* border-radius: 50%; */
-    width: 200px;
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
 }
 
 h2,h4,p,a{
