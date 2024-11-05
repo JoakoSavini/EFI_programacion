@@ -1,0 +1,76 @@
+body {
+    display: flex;
+    flex-direction: column;
+    background: #131211;
+}
+
+.logo{
+    width: 100px;
+    position: absolute;
+    top: -10px;
+}
+
+nav{
+    overflow: hidden;
+}
+
+.icons {
+    font-size: 1.5rem;
+    text-decoration: none;
+    border: none;
+}
+
+h2,h4,p,a{
+    color: #EFF1EC;
+}
+
+.text-yellow{
+    color: #FFB300;
+}
+
+.carousel-item img {
+    height: 20em;
+    object-fit: cover;
+    border: 4px solid #f8af1a;
+    padding: 4px;
+}
+.container-redes a {
+    margin: 0 10px; /* Espacio entre iconos de redes sociales */
+}
+main {
+    height: 85vh;
+}
+
+.navbar-nav {
+    list-style: none;
+    display: flex;
+    gap: 1.5em;
+}
+
+.nav-item {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.nav-item::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 2px;
+    background-color: #f8af1a;
+    border-radius: 4px;
+    scale: 0 1;
+    transform-origin: left;
+    transition: scale 0.35s;
+}
+
+.nav-item:hover::before {
+    scale: 1;
+}
+
+.nav-item .nav-link-custom {
+    color: #eff1fc !important;
+}

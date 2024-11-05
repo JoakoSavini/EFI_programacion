@@ -1,0 +1,134 @@
+body {
+    display: flex;
+    flex-direction: column;
+    background: #131211;
+}
+
+main {
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo{
+    width: 100px;
+    position: absolute;
+    top: -10px;
+}
+
+nav{
+    overflow: hidden;
+}
+
+.icons {
+    font-size: 1.5rem;
+    text-decoration: none;
+    border: none;
+}
+
+h2,h4,p,a{
+    color: #EFF1EC;
+}
+
+.text-yellow{
+    color: #FFB300;
+}
+
+.navbar-nav {
+    list-style: none;
+    display: flex;
+    gap: 1.5em;
+}
+
+.nav-item {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.nav-item::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 2px;
+    background-color: #f8af1a;
+    border-radius: 4px;
+    scale: 0 1;
+    transform-origin: left;
+    transition: scale 0.35s;
+}
+
+.nav-item:hover::before {
+    scale: 1;
+}
+
+.nav-item .nav-link-custom {
+    color: #eff1fc !important;
+}
+
+.container-form {
+    max-width: 400px;
+    width: 100%;
+    background: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    position: relative;
+}
+
+.pic {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    font-size: 24px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 60px;
+    border: 10px solid #131211;
+    background: linear-gradient(to right, #f8af19, #f1b741);
+    transform: translate(-50%, -50%);
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    text-align: center;
+    margin-top: 30px;
+    color: rgba(110, 109, 109, 0.6);
+}
+
+label, .links, button {
+    margin-top: 20px;
+}
+
+label {
+    margin-top: 20px;
+    font-size: 12px;
+    color: rgb(87, 86, 86);
+    font-weight: 600;
+}
+
+.input {
+    padding: 8px;
+    outline: none;
+    border: 0;
+    background: #eee;
+}
+
+button {
+    background: linear-gradient(to right, #f8af19, #f1b741);
+    padding: 8px;
+    border: 0;
+    color: #fff;
+    font-size: 15px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
