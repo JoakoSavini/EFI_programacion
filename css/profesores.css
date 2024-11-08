@@ -14,6 +14,13 @@ nav{
     overflow: hidden;
 }
 
+.imagen{
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
 .icons {
     font-size: 1.5rem;
     text-decoration: none;
@@ -73,4 +80,85 @@ main {
 
 .nav-item .nav-link-custom {
     color: #eff1fc !important;
+}
+
+/* Animacion Hover botones de social media */
+/* Facebook */
+.icon-fa {
+    transition: color 0.3s ease;
+}
+.icon-fa::after {
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+}
+.icon-fa:hover::after {
+    transform: scaleX(1); /* Rellena todo el icono al hacer hover */
+}
+.icon-fa:hover {
+    color: #0b22f3; /* Cambia el color del icono al hacer hover */
+}
+
+/* Instagram */
+.icon-ig {
+    transition: color 0.3s ease;
+}
+.icon-ig::after {
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+}
+.icon-ig:hover::after {
+    transform: scaleX(1); /* Rellena todo el icono al hacer hover */
+}
+.icon-ig:hover {
+    color: #cc2366;
+}
+
+/* Gmail */
+.icon-gm {
+    transition: color 0.3s ease;
+}
+.icon-gm::after {
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+}
+.icon-gm:hover::after {
+    transform: scaleX(1); /* Rellena todo el icono al hacer hover */
+}
+.icon-gm:hover {
+    color: #0b22f3; /* Cambia el color del icono al hacer hover */
+}
+
+/* Twitter */
+.icon-tw {
+    transition: color 0.3s ease;
+}
+.icon-tw::after {
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+}
+.icon-tw:hover::after {
+    transform: scaleX(1); /* Rellena todo el icono al hacer hover */
+}
+.icon-tw:hover {
+    color: #000000; /* Cambia el color del icono al hacer hover */
+}
+
+/* LinkedIn */
+.icon-li {
+    transition: color 0.3s ease;
+}
+.icon-li::after {
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+}
+.icon-li:hover::after {
+    transform: scaleX(1); /* Rellena todo el icono al hacer hover */
+}
+.icon-li:hover {
+    color: #0b22f3; /* Cambia el color del icono al hacer hover */
 }

@@ -247,3 +247,52 @@ main {
     grid-column: span 2;
     margin-bottom: 10px;
   }
+
+  /* Animacion Hover botones de social media */
+/* Threads */
+.icon-tr {
+  transition: color 0.3s ease;
+}
+.icon-fa::after {
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+.icon-fa:hover::after {
+  transform: scaleX(1); /* Rellena todo el icono al hacer hover */
+}
+.icon-tr:hover {
+  color: #000000; /* Cambia el color del icono al hacer hover */
+}
+/* ----------- */
+/* Instagram */
+.icon-ig {
+  transition: color 0.3s ease;
+}
+.icon-ig::after {
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+.icon-ig:hover::after {
+  transform: scaleX(1); /* Rellena todo el icono al hacer hover */
+}
+.icon-ig:hover {
+  color: #cc2366;
+}
+/* ----------- */
+/* TikTok */
+.icon-tk {
+  transition: color 0.3s ease;
+}
+.icon-tk::after {
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+.icon-tk:hover::after {
+  transform: scaleX(1); /* Rellena todo el icono al hacer hover */
+}
+.icon-tk:hover {
+  color: #000000;
+}

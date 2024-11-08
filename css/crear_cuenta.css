@@ -36,7 +36,7 @@ main {
     height: 80px;
     border-radius: 50%;
     font-size: 24px;
-    color: #ffffff;
+    color: #131211;
     text-align: center;
     line-height: 60px;
     border: 10px solid #131211;
@@ -71,18 +71,21 @@ label {
     border-radius: 5px;
 }
 
-button {
+.btn {
     background: linear-gradient(to right, #f8af19, #f1b741);
     padding: 8px;
-    border: none;
-    color: #fff;
+    border: 0;
+    color: #131211;
     font-size: 15px;
     letter-spacing: 1px;
     text-transform: uppercase;
-    margin-top: 20px;
-    border-radius: 5px;
-    cursor: pointer;
 }
+
+.btn:hover{
+    color: #f8af19; /* para cuando se hace hover en la letra */
+    background: #131211
+}
+
 
 .extra-options {
     margin-top: 1.5rem;
