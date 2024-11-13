@@ -1,80 +1,14 @@
+/* CSS de perfil */
+
 body {
     display: flex;
     flex-direction: column;
     background: #131211;
     font-family: 'Montserrat', sans-serif;
-    
 }
 
-.logo{
+.logo {
     width: 100px;
-    position: absolute;
-    top: -10px;
-}
-
-nav{
-    overflow: hidden;
-}
-
-.icons {
-    font-size: 1.5rem;
-    text-decoration: none;
-    border: none;
-}
-
-.imagen{
-    border-radius: 50%;
-    width: 300px;
-    height: 300px;
-    object-fit: cover;
-}
-
-h2,h4,p,a{
-    color: #EFF1EC;
-}
-
-.text-yellow{
-    color: #FFB300;
-}
-
-.navbar-nav {
-    list-style: none;
-    display: flex;
-    gap: 1.5em;
-}
-
-.nav-item {
-    position: relative;
-    display: inline-block;
-    cursor: pointer;
-}
-
-.nav-item::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -1px;
-    width: 100%;
-    height: 2px;
-    background-color: #f8af1a;
-    border-radius: 4px;
-    scale: 0 1;
-    transform-origin: left;
-    transition: scale 0.35s;
-}
-
-.nav-item:hover::before {
-    scale: 1;
-}
-
-.nav-item .nav-link-custom {
-    color: #eff1fc !important;
-}
-
-.icons {
-    font-size: 1.5rem;
-    text-decoration: none;
-    border: none;
 }
 
 .color-nav {
@@ -82,97 +16,111 @@ h2,h4,p,a{
     transition: color 0.3s ease;
 }
 
-/* Animacion Hover botones de social media */
-/* Threads */
-.icon-tr {
+.navbar-nav {
+    display: flex;
+    gap: 1.5em;
+}
+
+.nav-item {
+    position: relative;
+    cursor: pointer;
+}
+
+.nav-item::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background-color: #f8af1a;
+    transform-origin: left;
+    scale: 0 1;
+    transition: scale 0.35s;
+}
+
+.nav-item:hover::before {
+    scale: 1;
+}
+
+.imagen {
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+}
+
+h2, h4, p, a {
+    color: #EFF1EC;
+}
+
+.text-yellow {
+    color: #FFB300;
+}
+
+.contenedor-info {
+    background-color: #1a1a1a;
+    border-radius: 8px;
+    padding: 1.5rem;
+    width: 100%;
+}
+
+/* Botones de acción */
+.action-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    background-color: #1a1a1a;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+}
+
+.btn-action {
+    display: block;
+    padding: 0.6rem;
+    color: #FFB300;
+    text-decoration: none;
+    border: 1px solid #FFB300;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-action:hover {
+    background-color: #FFB300;
+    color: #1a1a1a;
+}
+
+.icons {
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.icon-tr, .icon-tk, .icon-ig {
     transition: color 0.3s ease;
 }
-.icon-fa::after {
-    transform: scaleX(0);
-    transform-origin: left;
-    transition: transform 0.3s ease;
-}
-.icon-fa:hover::after {
-    transform: scaleX(1); /* Rellena todo el icono al hacer hover */
-}
-.icon-tr:hover {
-    color: #000000; /* Cambia el color del icono al hacer hover */
-}
-/* ----------- */
-/* Instagram */
-.icon-ig {
-    transition: color 0.3s ease;
-}
-.icon-ig::after {
-    transform: scaleX(0);
-    transform-origin: left;
-    transition: transform 0.3s ease;
-}
-.icon-ig:hover::after {
-    transform: scaleX(1); /* Rellena todo el icono al hacer hover */
-}
-.icon-ig:hover {
-    color: #cc2366;
-}
-/* ----------- */
-/* TikTok */
-.icon-tk {
-    transition: color 0.3s ease;
-}
-.icon-tk::after {
-    transform: scaleX(0);
-    transform-origin: left;
-    transition: transform 0.3s ease;
-}
-.icon-tk:hover::after {
-    transform: scaleX(1); /* Rellena todo el icono al hacer hover */
-}
-.icon-tk:hover {
-    color: #000000;
-}
+
+.icon-tr:hover { color: #000000; }
+.icon-tk:hover { color: #000000; }
+.icon-ig:hover { color: #cc2366; }
 
 @media only screen and (max-width: 767px) {
-    .logo{
-        width: 4em;
+    .contenido {
+        flex-direction: column;
+        align-items: center;
     }
-
-    /* CSS para el menú desplegable */
-    /* Ajusta el estilo del menú desplegable */
+    .informacion {
+        align-items: center;
+    }
     .navbar-collapse {
-        position: fixed; /* Fija la posición para que esté superpuesta */
-        top: 3em;
-        right: 0;
-        width: 50%;
-        height: 100vh; /* Ocupa el 100% de la altura de la pantalla */
-        background-color: rgba(248, 175, 25, 0.8); /* Fondo blanco o el color que prefieras */
-        z-index: 1000;
-        padding-top: 1rem; /* Ajusta el espaciado superior si es necesario */
-        transition: transform 0.3s ease;
-        border-radius: 20px 0 0 20px;
+        background-color: rgba(248, 175, 25, 0.8);
     }
+}
 
-    .navbar-collapse .nav-item{
-        padding: 0 10px;
-    }
-
-    .nav-item .nav-link-custom {
-        color: black !important;
-    }
-
-    .navbar-collapse .nav-item .nav-link-custom:hover {
-        color: #f8af1a;
-    }
-
-    /* Ocultar la franja blanca mientras el menú está colapsado */
-    .navbar-collapse.collapse {
-        display: none !important;
-    }
-
-    .navbar-collapse.show {
-        display: block !important;
-        transform: translateY(0); /* Asegura que aparezca en su posición */
-    }
-
-
-
+.membership-title {
+    text-align: center; /* Centra el título */
+    font-size: 2rem; /* Ajusta el tamaño de la fuente */
+    margin-bottom: 2rem; /* Espacio debajo del título */
+    color: #EFF1EC;/* Color del texto */
+    font-family: 'Gabarito';
 }

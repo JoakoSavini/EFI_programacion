@@ -232,3 +232,11 @@ main {
 
 
 }
+
+.membership-title {
+    text-align: center; /* Centra el título */
+    font-size: 2rem; /* Ajusta el tamaño de la fuente */
+    margin-bottom: 2rem; /* Espacio debajo del título */
+    color: #EFF1EC;/* Color del texto */
+    font-family: 'Gabarito';
+}
