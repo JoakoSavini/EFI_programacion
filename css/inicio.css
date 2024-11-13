@@ -64,6 +64,15 @@ h2,h4,p,a{
     color: #eff1fc !important;
 }
 
+.btn{
+    background-color: #FFB300;
+}
+
+.btn:hover{
+    color: #FFB300; /* para cuando se hace hover en la letra */
+    background-color: #131210;
+}
+
 .icons {
     font-size: 1.5rem;
     text-decoration: none;

@@ -68,5 +68,14 @@ h2,h4,p,a{
     margin-bottom: 2rem; /* Espacio debajo del título */
     color: #ffffff;/* Color del texto */
     font-weight: bold; /* Resalta el título */
-    font-family: 'SourGummy';
+    font-family: 'Gabarito';
+}
+
+.carta{
+    background-color: #131211;
+    color: #EFF1EC;
+}
+
+.text-yellow{
+    color: #FFB300;
 }

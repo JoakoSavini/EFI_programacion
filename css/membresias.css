@@ -12,6 +12,10 @@ body {
     top: -10px;
 }
 
+.text-yellow{
+    color: #FFB300;
+}
+
 nav{
     overflow: hidden;
 }
@@ -145,7 +149,7 @@ h2,h4,p,a{
 }
 
 .btn-primary {
-    background-color: #007bff;
+    background-color: #f8af1a;
     border: none;
     padding: 0.6rem 1.2rem;
     font-size: 0.9rem;
@@ -154,15 +158,16 @@ h2,h4,p,a{
 }
 
 .btn-primary:hover {
-    background-color: #0056b3;
+    background-color: #131210;
+    color: #f8af1a;
 }
 
 .membership-title {
     text-align: center; /* Centra el título */
     font-size: 2rem; /* Ajusta el tamaño de la fuente */
     margin-bottom: 2rem; /* Espacio debajo del título */
-    color: #FFB300;/* Color del texto */
-    font-family: 'SourGummy';
+    color: #EFF1EC;/* Color del texto */
+    font-family: 'Gabarito';
 }
 
 /* Animacion Hover botones de social media */

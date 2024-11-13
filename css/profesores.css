@@ -29,6 +29,10 @@ nav{
     border: none;
 }
 
+h3{
+    font-family: 'Gabarito';
+}
+
 h2,h4,p,a{
     color: #EFF1EC;
 }
