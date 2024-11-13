@@ -2,23 +2,44 @@ body {
     display: flex;
     flex-direction: column;
     background: #131211;
-    color: #EFF1EC;
     font-family: 'Montserrat', sans-serif;
 
 }
 
-.logo {
+.logo{
     width: 100px;
     position: absolute;
     top: -10px;
 }
 
-.nav-link-custom {
-    color: #eff1fc !important;
+nav{
+    overflow: hidden;
+}
+
+.icons {
+    font-size: 1.5rem;
+    text-decoration: none;
+    border: none;
+}
+
+h2,h4,p,a{
+    color: #EFF1EC;
+}
+
+.text-yellow{
+    color: #FFB300;
 }
 
 .navbar-nav {
+    list-style: none;
+    display: flex;
     gap: 1.5em;
+}
+
+.nav-item {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
 }
 
 .nav-item::before {
@@ -39,30 +60,13 @@ body {
     scale: 1;
 }
 
-.card-header {
-    background-color: #000;
-    color: #f8af1a;
-    font-size: 1.2rem;
-    padding: 10px;
+.nav-item .nav-link-custom {
+    color: #eff1fc !important;
 }
 
-.card-body {
-    padding: 15px;
-    border-radius: 0 0 8px 8px;
-}
-
-.text-yellow {
-    color: #FFB300;
-}
-
-.color-nav {
-    background-color: #131210;
-    transition: color 0.3s ease;
-}
-
-.icons {
-    font-size: 1.5rem;
-    text-decoration: none;
-    color: #eff1fc;
-    border: none;
+.title {
+    margin-bottom: 2rem; /* Espacio debajo del título */
+    color: #ffffff;/* Color del texto */
+    font-weight: bold; /* Resalta el título */
+    font-family: 'SourGummy';
 }

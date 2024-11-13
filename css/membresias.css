@@ -157,7 +157,7 @@ h2,h4,p,a{
     font-size: 2rem; /* Ajusta el tamaño de la fuente */
     margin-bottom: 2rem; /* Espacio debajo del título */
     color: #FFB300;/* Color del texto */
-    font-weight: bold; /* Resalta el título */
+    font-family: 'SourGummy';
 }
 
 /* Animacion Hover botones de social media */
