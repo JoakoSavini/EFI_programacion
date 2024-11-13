@@ -125,3 +125,71 @@ h2,h4,p,a{
 .btn {
     width: 50%;
 }
+
+@media only screen and (max-width: 767px) {
+    .logo{
+        width: 4em;
+    }
+    .imagen{
+        border-radius: 50%;
+        width: 10em;
+        object-fit: cover;
+    }
+
+    .carousel-item img {
+        height: 10em;
+        object-fit: cover;
+        border: 3px solid #f8af1a;
+        padding: 5px;
+        margin-bottom: 1em;
+    }
+
+    .container-redes a {
+        margin: 0 2px; /* Espacio entre iconos de redes sociales */
+        font-size: 0.8em;
+    }
+
+    .container-descripcion {
+        font-size: 0.8em;
+    }
+
+    /* CSS para el menú desplegable */
+    /* Ajusta el estilo del menú desplegable */
+    .navbar-collapse {
+        position: fixed; /* Fija la posición para que esté superpuesta */
+        top: 3em;
+        right: 0;
+        width: 50%;
+        height: 100vh; /* Ocupa el 100% de la altura de la pantalla */
+        background-color: rgba(248, 175, 25, 0.8); /* Fondo blanco o el color que prefieras */
+        z-index: 1000;
+        padding-top: 1rem; /* Ajusta el espaciado superior si es necesario */
+        transition: transform 0.3s ease;
+        border-radius: 20px 0 0 20px;
+    }
+
+    .navbar-collapse .nav-item{
+        padding: 0 10px;
+    }
+
+    .nav-item .nav-link-custom {
+        color: black !important;
+    }
+
+    .navbar-collapse .nav-item .nav-link-custom:hover {
+        color: #f8af1a;
+    }
+
+    /* Ocultar la franja blanca mientras el menú está colapsado */
+    .navbar-collapse.collapse {
+        display: none !important;
+    }
+
+    .navbar-collapse.show {
+        display: block !important;
+        transform: translateY(0); /* Asegura que aparezca en su posición */
+    }
+
+
+
+}
