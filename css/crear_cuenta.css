@@ -116,3 +116,30 @@ footer .icons {
 footer .icons:hover {
     color: #d98e10;
 }
+
+@media only screen and (max-width: 767px) {
+    .container-form {
+        max-width: 350px;
+        height: 80vh;
+        width: 100%;
+        background: #1f1f1f;
+        padding: 40px;
+        border-radius: 20px;
+        position: relative;
+        color: #eff1fc;
+    }
+
+    .title {
+        margin-top: 10px;
+    }
+
+    label {
+        margin-top: 10px;
+    }
+
+    main {
+        height: 100vh;
+    }
+}
+
+
