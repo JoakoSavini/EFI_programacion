@@ -2,6 +2,8 @@ body {
     display: flex;
     flex-direction: column;
     background: #131211;
+    font-family: 'Montserrat', sans-serif;
+
 }
 
 main {
