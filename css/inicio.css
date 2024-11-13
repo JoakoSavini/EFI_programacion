@@ -121,3 +121,7 @@ h2,h4,p,a{
 .icon-tk:hover {
     color: #000000;
 }
+
+.btn {
+    width: 50%;
+}
