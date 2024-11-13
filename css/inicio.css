@@ -132,28 +132,6 @@ h2,h4,p,a{
     .logo{
         width: 4em;
     }
-    .imagen{
-        border-radius: 50%;
-        width: 10em;
-        object-fit: cover;
-    }
-
-    .carousel-item img {
-        height: 10em;
-        object-fit: cover;
-        border: 3px solid #f8af1a;
-        padding: 5px;
-        margin-bottom: 1em;
-    }
-
-    .container-redes a {
-        margin: 0 2px; /* Espacio entre iconos de redes sociales */
-        font-size: 0.8em;
-    }
-
-    .container-descripcion {
-        font-size: 0.8em;
-    }
 
     /* CSS para el menú desplegable */
     /* Ajusta el estilo del menú desplegable */
