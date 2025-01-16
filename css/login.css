@@ -135,11 +135,13 @@ label{
     font-size: 15px;
     letter-spacing: 1px;
     text-transform: uppercase;
+    transition: 1.5s;
 }
 
 .btn:hover{
     color: #f8af19; /* para cuando se hace hover en la letra */
-    background: #131211
+    background: #131211;
+    transition: 1.5s;
 }
 
 /* Animacion Hover botones de social media */

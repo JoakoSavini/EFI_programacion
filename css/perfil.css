@@ -176,3 +176,46 @@ h2,h4,p,a{
 
 
 }
+
+/*para los desplegables*/
+
+.accordion-button {
+    font-size: 0.9rem; /* Reduce el tamaño del texto */
+    padding: 0.5rem 1rem; /* Reduce el padding del botón */
+    background-color: #050505; /* Fondo inicial */
+    color: white; /* Color del texto */
+}
+
+.accordion-button:focus {
+    box-shadow: none; /* Elimina el contorno azul al enfocar */
+}
+
+.accordion-body {
+    font-size: 0.85rem; /* Reduce el tamaño del texto dentro del cuerpo */
+    line-height: 1.5; /* Mejora el espaciado entre líneas */
+}
+
+.accordion-body p {
+    margin: 0; /* Elimina margenes extra de los párrafos */
+}
+
+.accordion-body span {
+    display: block; /* Coloca cada texto en una línea distinta */
+    margin-bottom: 0.5rem; /* Añade espacio entre elementos */
+}
+
+/* Color cuando el acordeón está activo */
+.accordion-button:not(.collapsed) {
+    background-color: #050505; /* Fondo cuando está desplegado */
+    color: white; /* Color del texto cuando está activo */
+}
+
+/* Quitar el borde por defecto */
+.accordion-button:focus {
+    box-shadow: none; /* Sin contorno azul */
+}
+
+/* Personalizar el contenedor del acordeón desplegado */
+.accordion-collapse {
+    background-color: #EFF1EC; /* Fondo del contenido desplegado */
+}
