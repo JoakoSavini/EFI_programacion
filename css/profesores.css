@@ -88,6 +88,16 @@ main {
     color: #eff1fc !important;
 }
 
+/* Clase para la página activa */
+.nav-item .active-page {
+    color: #FFB300 !important; /* Cambia el color del texto */
+}
+
+.nav-item .active-page::before {
+    scale: 1;
+}
+
+
 /* Animacion Hover botones de social media */
 /* Facebook */
 .icon-fa {
