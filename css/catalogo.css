@@ -3,7 +3,10 @@ body {
     flex-direction: column;
     background: #131211;
     font-family: 'Montserrat', sans-serif;
+}
 
+main{
+  flex: 1;
 }
 
 .logo{
@@ -156,8 +159,13 @@ main {
   }
   
   .card-btn:hover {
-    background: #ff7d7d;
-    color: #fff;
+    background: #ffb300;
+    color: #131211;
+  }
+
+  .discount-tag{
+    background: #ffb300;
+    color: #131211;
   }
   
   .product-info {
