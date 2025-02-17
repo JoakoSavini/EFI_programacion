@@ -29,9 +29,13 @@ nav{
     object-fit: cover;
 }
 
-h2,h4,p,a{
+h3,h4,a,i{
     color: #EFF1EC;
 }
+
+.cerrar {background-color: #fd151b}
+.editar {background-color: #3E885B;}
+.info {color: white}
 
 .text-yellow{
     color: #FFB300;
@@ -185,6 +189,12 @@ h2,h4,p,a{
 
 
 
+}
+
+
+.carta{
+    background-color: #131211;
+    color: #EFF1EC;
 }
 
 /*para los desplegables*/
