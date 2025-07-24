@@ -186,6 +186,15 @@ h2,h4,p,a{
         transform: translateY(0); /* Asegura que aparezca en su posición */
     }
 
+    .navbar-collapse {
+        background-color: #f8af1a;
+        /* Fondo oscuro personalizado */
+        z-index: 1000;
+        border-radius: 0 0 10px 10px;
+    }
 
+    .navbar-nav .nav-link {
+        color:#131210 !important;
+    }
 
 }

@@ -6,13 +6,13 @@ body {
 
 }
 
-.logo{
+.logo {
     width: 100px;
     position: absolute;
     top: -10px;
 }
 
-nav{
+nav {
     overflow: hidden;
 }
 
@@ -22,11 +22,14 @@ nav{
     border: none;
 }
 
-h2,h4,p,a{
+h2,
+h4,
+p,
+a {
     color: #EFF1EC;
 }
 
-.text-yellow{
+.text-yellow {
     color: #FFB300;
 }
 
@@ -64,12 +67,13 @@ h2,h4,p,a{
     color: #eff1fc !important;
 }
 
-.btn{
+.btn {
     background-color: #FFB300;
 }
 
-.btn:hover{
-    color: #FFB300; /* para cuando se hace hover en la letra */
+.btn:hover {
+    color: #FFB300;
+    /* para cuando se hace hover en la letra */
     background-color: #131210;
 }
 
@@ -89,46 +93,61 @@ h2,h4,p,a{
 .icon-tr {
     transition: color 0.3s ease;
 }
+
 .icon-fa::after {
     transform: scaleX(0);
     transform-origin: left;
     transition: transform 0.3s ease;
 }
+
 .icon-fa:hover::after {
-    transform: scaleX(1); /* Rellena todo el icono al hacer hover */
+    transform: scaleX(1);
+    /* Rellena todo el icono al hacer hover */
 }
+
 .icon-tr:hover {
-    color: #000000; /* Cambia el color del icono al hacer hover */
+    color: #000000;
+    /* Cambia el color del icono al hacer hover */
 }
+
 /* ----------- */
 /* Instagram */
 .icon-ig {
     transition: color 0.3s ease;
 }
+
 .icon-ig::after {
     transform: scaleX(0);
     transform-origin: left;
     transition: transform 0.3s ease;
 }
+
 .icon-ig:hover::after {
-    transform: scaleX(1); /* Rellena todo el icono al hacer hover */
+    transform: scaleX(1);
+    /* Rellena todo el icono al hacer hover */
 }
+
 .icon-ig:hover {
     color: #cc2366;
 }
+
 /* ----------- */
 /* TikTok */
 .icon-tk {
     transition: color 0.3s ease;
 }
+
 .icon-tk::after {
     transform: scaleX(0);
     transform-origin: left;
     transition: transform 0.3s ease;
 }
+
 .icon-tk:hover::after {
-    transform: scaleX(1); /* Rellena todo el icono al hacer hover */
+    transform: scaleX(1);
+    /* Rellena todo el icono al hacer hover */
 }
+
 .icon-tk:hover {
     color: #000000;
 }
@@ -138,26 +157,30 @@ h2,h4,p,a{
 }
 
 @media only screen and (max-width: 767px) {
-    .logo{
+    .logo {
         width: 4em;
     }
 
     /* CSS para el menú desplegable */
     /* Ajusta el estilo del menú desplegable */
     .navbar-collapse {
-        position: fixed; /* Fija la posición para que esté superpuesta */
+        position: fixed;
+        /* Fija la posición para que esté superpuesta */
         top: 3em;
         right: 0;
         width: 50%;
-        height: 100vh; /* Ocupa el 100% de la altura de la pantalla */
-        background-color: rgba(248, 175, 25, 0.8); /* Fondo blanco o el color que prefieras */
+        height: 100vh;
+        /* Ocupa el 100% de la altura de la pantalla */
+        background-color: rgba(248, 175, 25, 0.8);
+        /* Fondo blanco o el color que prefieras */
         z-index: 1000;
-        padding-top: 1rem; /* Ajusta el espaciado superior si es necesario */
+        padding-top: 1rem;
+        /* Ajusta el espaciado superior si es necesario */
         transition: transform 0.3s ease;
         border-radius: 20px 0 0 20px;
     }
 
-    .navbar-collapse .nav-item{
+    .navbar-collapse .nav-item {
         padding: 0 10px;
     }
 
@@ -176,9 +199,55 @@ h2,h4,p,a{
 
     .navbar-collapse.show {
         display: block !important;
-        transform: translateY(0); /* Asegura que aparezca en su posición */
+        transform: translateY(0);
+        /* Asegura que aparezca en su posición */
     }
 
+    .navbar-collapse {
+        background-color: #f8af1a;
+        /* Fondo oscuro personalizado */
+        z-index: 1000;
+        border-radius: 0 0 10px 10px;
+    }
 
+    .navbar-nav .nav-link {
+        color: #131210 !important;
+    }
 
+    .bloque {
+        flex-direction: column !important;
+        align-items: center;
+        text-align: center;
+    }
+
+    .bloque .mitad {
+        width: 100% !important;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* esto centra horizontalmente todo el contenido */
+    }
+
+    .bloque img {
+        max-width: 90%;
+        height: auto;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .bloque p {
+        display: none;
+    }
+
+    .bloque h2 {
+        margin-top: 15px;
+        font-size: 1.4rem;
+    }
+
+    .bloque .btn {
+        margin-top: 10px;
+        display: inline-block;
+        align-self: center;
+    }
 }
